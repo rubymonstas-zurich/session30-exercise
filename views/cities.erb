@@ -1,0 +1,17 @@
+<a href='/'>&lt; overview</a>
+<h1>Cities</h1>
+
+<table border='1' width='100%'>
+<% @cities.each do |city| %>
+  <tr>
+    <td>
+      <%= city[:id] %>
+    </td>
+    <td>
+      <%= city[:name] %>
+    </td>
+  </tr>
+<% end %>
+</table>
+
+<a href='/cities/new'>Add a new city</a>

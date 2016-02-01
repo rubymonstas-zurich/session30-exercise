@@ -1,0 +1,21 @@
+<a href='/'>&lt; overview</a>
+
+<h1>Users</h1>
+
+<table border='1' width='100%'>
+<% @users.each do |user| %>
+  <tr>
+    <td>
+      <%= user[:id] %>
+    </td>
+    <td>
+      <%= user[:first_name] %>
+    </td>
+    <td>
+      <%= user[:last_name] %>
+    </td>
+  </tr>
+<% end %>
+</table>
+
+<a href='/users/new'>Add a new user</a>
